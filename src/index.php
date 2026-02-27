@@ -31,7 +31,7 @@
                     <label for="nome_empresa">Nome da Empresa</label>
                     <input type="text" name="nome_empresa" id="nome_empresa">
                     <label for="cnpj">CNPJ</label>
-                    <input type="text" name="cnpj" id="cnpj">
+                    <input class="cnpj" type="text" name="cnpj" id="cnpj">
                     <label for="telefone">Telefone</label>
                     <input type="tel" name="telefone" id="telefone">
                     <label for="endereco">Endereço</label>
@@ -42,7 +42,7 @@
                     <label for="razao_cliente">Empresa Cliente</label>
                     <input type="text" name="razao_cliente" id="razao_cliente">
                     <label for="cnpj_cliente">CNPJ</label>
-                    <input type="text" name="cnpj_cliente" id="cnpj_cliente">
+                    <input class="cnpj" type="text" name="cnpj_cliente" id="cnpj_cliente">
                 </fieldset>
                 </div>
                 <fieldset>
@@ -59,10 +59,12 @@
                     <label for="numero_conta">Número da Conta</label>
                     <input type="text" name="numero_conta" id="numero_conta">
                     <label for="cnpj_beneficiario">CNPJ</label>
-                    <input type="text" name="cnpj_beneficiario" id="cnpj">
+                    <input class="cnpj" type="text" name="cnpj_beneficiario" id="cnpj">
                 </fieldset>
             </div>
-            <button type="submit">Enviar</button>
+            <div>
+                <button type="submit">Enviar</button>
+            </div>
         </form>
     </main>
     <footer class="noprint">
@@ -76,7 +78,7 @@
 </body>
 <script>
     $(document).ready(function(){
-    $('#cnpj').mask('99.999.999/9999-99');
+    $('.cnpj').mask('99.999.999/9999-99');
 });
 </script>
 </html>
