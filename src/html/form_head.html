@@ -1,0 +1,25 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- biblioteca jsPDF para gerar o PDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <!-- biblioteca html2canvas para renderizar o HTML como imagem -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <style>
+        /* Estilos personalizados para garantir uma boa aparência no PDF */
+        @media print {
+            body {
+                -webkit-print-color-adjust: exact;
+            }
+            .no-print {
+                display: none;
+            }
+        }
+        #invoice-box {
+            font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+            color: #555;
+        }
+    </style>
+</head>
