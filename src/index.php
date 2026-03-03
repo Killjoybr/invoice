@@ -1,5 +1,5 @@
 <?php
-
+    session_start();
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -33,7 +33,7 @@
                     <label for="cnpj">CNPJ</label>
                     <input class="cnpj" type="text" name="cnpj" id="cnpj">
                     <label for="telefone">Telefone</label>
-                    <input type="tel" name="telefone" id="telefone">
+                    <input class="tel "type="tel" name="telefone" id="telefone">
                     <label for="endereco">Endereço</label>
                     <input type="text" name="endereco" id="endereco">
                 </fieldset>
@@ -79,6 +79,7 @@
 <script>
     $(document).ready(function(){
     $('.cnpj').mask('99.999.999/9999-99');
+    $('.tel').mask('(99) 9 9999-9999')
 });
 </script>
 </html>
